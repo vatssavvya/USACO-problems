@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class ChipExchange {
+
+public class ChipExchange{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int T = scanner.nextInt();
@@ -16,13 +17,12 @@ public class ChipExchange {
     }
     public static long solve(long A, long B, long cA, long cB, long fA) {
         long currentTotal = A + ((B/cB) * cA);
-        if (currentTotal > fA)
+        if (currentTotal > fA) 
             return 0;
         long neededA = fA - currentTotal;
-        long batch = (neededA + cA - 1)/cA;
-        long targetB = batch * cB;
-        long leftoverB = B%cB;
-        long neededB = targetB - leftoverB + (cB-1);
+        long batchesNeeded = (neededA + cA - 1)/cA;
+        long targetB = batchesNeeded * cB;
+        long neededB = (targetB - B%cB) + (cB - 1);
         return Math.max(neededA, neededB);
     }
 }
