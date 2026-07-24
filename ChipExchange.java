@@ -9,12 +9,14 @@ public class ChipExchange {
             long cA = scanner.nextLong();
             long cB = scanner.nextLong();
             long fA = scanner.nextLong();
+
+            long ans = solve(A, B, cA, cB, fA);
         }
 
 
     }
 
-    public void solve(int A, int B, int cA, int cB, int fA) {
-
+    public static long solve(long A, long B, long cA, long cB, long fA) {
+        return 0;
     }
 }
