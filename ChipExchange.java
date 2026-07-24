@@ -17,6 +17,8 @@ public class ChipExchange {
     }
 
     public static long solve(long A, long B, long cA, long cB, long fA) {
+        if (A > fA)
+            return 0;
         return 0;
     }
 }
