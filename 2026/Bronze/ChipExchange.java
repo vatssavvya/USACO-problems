@@ -22,7 +22,7 @@ public class ChipExchange {
         long batch = (neededA + cA - 1)/cA;
         long targetB = batch * cB;
         long leftoverB = B%cB;
-        long neededB = targetB - leftoverB + (cB -1);
+        long neededB = targetB - leftoverB + (cB-1);
         return Math.max(neededA, neededB);
     }
 }
