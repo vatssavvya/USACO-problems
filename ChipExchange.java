@@ -16,6 +16,9 @@ public class ChipExchange {
         long currentTotal = A + ((B/cB) * cA);
         if (currentTotal > fA)
             return 0;
+        long neededA = fA - currentTotal;
+        long batch = (neededA + cA - 1)/cA;
+        long targetB = batch * cB;
         
         return 0;
     }
