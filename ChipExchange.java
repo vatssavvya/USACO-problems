@@ -10,7 +10,9 @@ public class ChipExchange {
             long cB = scanner.nextLong();
             long fA = scanner.nextLong();
             long ans = solve(A, B, cA, cB, fA);
+            System.out.println(ans);
         }
+        scanner.close();
     }
     public static long solve(long A, long B, long cA, long cB, long fA) {
         long currentTotal = A + ((B/cB) * cA);
@@ -19,7 +21,9 @@ public class ChipExchange {
         long neededA = fA - currentTotal;
         long batch = (neededA + cA - 1)/cA;
         long targetB = batch * cB;
-        
-        return 0;
+        long leftoverB = B%cB;
+        long neededB = targetB - leftoverB + (cB -1);
+
+        return Math.max(neededA, neededB);
     }
 }
