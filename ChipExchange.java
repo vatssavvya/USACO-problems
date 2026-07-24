@@ -13,8 +13,10 @@ public class ChipExchange {
         }
     }
     public static long solve(long A, long B, long cA, long cB, long fA) {
-        if (A > fA)
+        long currentTotal = A + ((B/cB) * cA);
+        if (currentTotal > fA)
             return 0;
+        
         return 0;
     }
 }
