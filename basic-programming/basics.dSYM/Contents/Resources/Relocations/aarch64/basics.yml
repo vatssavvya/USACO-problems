@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/avatsa/Documents/programming/javaStuff/USACO-problems/basic-programming/basics'
+relocations:     []
+...
