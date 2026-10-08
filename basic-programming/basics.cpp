@@ -17,5 +17,5 @@ int main() {
     int a;
     double b; 
     cin >> a >> b; //input
-    cout << "hello" << endl; //endl is for new line
+    cout << a << " " << b << endl; //endl is for new line
 }
