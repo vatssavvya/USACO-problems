@@ -9,9 +9,13 @@
 using namespace std;
 
 int main() {
-    char c = 'a';
+    /*char c = 'a';
     bool flag = false;
     int a = 4;
-    double b = 3.5;
-    cout << "hello" << flag << endl; //endl is for new line
+    double b = 3.5;*/
+
+    int a;
+    double b; 
+    cin >> a >> b; //input
+    cout << "hello" << endl; //endl is for new line
 }
