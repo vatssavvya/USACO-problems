@@ -12,5 +12,5 @@ int main() {
     char c = 'a';
     int a = 4;
     double b = 3.5;
-    cout << "hello" << endl; //endl is for new line
+    cout << "hello" << endl; //end l is for new line
 }
