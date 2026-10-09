@@ -13,9 +13,8 @@ int main() {
     bool flag = false;
     int a = 4;
     double b = 3.5;*/
-
-    int a;
-    double b; 
-    cin >> a >> b; //input
-    cout << a << " " << b << endl; //endl is for new line
+    int x = 1000000;
+    int y = 1000000;
+    long z = x * 1LL * y;
+    cout << z;
 }
